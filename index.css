@@ -1,0 +1,120 @@
+body{
+    font-family: 'Barlow Semi Condensed', sans-serif;      
+}
+.container{
+    width: 100%;
+    height: 100%;
+}
+header{
+    font-weight:500;/*chequear weight de las fuentes*/
+}
+nav{
+    margin: 0 5px 80px 5px;
+}
+.gridNavContainer{
+    display: grid;
+    grid-template-columns: .3fr .4fr .3fr;
+}
+.imgLogo{
+    width: 48px; 
+    height: 40px;   
+}
+.imgLogoText{
+    width: 70px;
+    height: 30px;    
+}
+.ulNav{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+.liNav{
+    margin: 0 8px 0 8px;
+}
+.btnLogin{
+    margin: 0 15px 0 15px;
+
+}
+.btnRegister{
+    background-color: #2ad167;
+    border-radius: 6px; 
+    color: #f7f8f9;
+    padding: 8px 15px 8px 15px;   
+}
+#logo{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#login{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.new{
+    background-color: #2ad167;
+    border-radius: 18px; 
+    color: #f7f8f9;
+    padding: 3px 7px 3px 7px;
+    font-size: 9px;
+}
+h1{
+    font-weight:bolder;
+    font-size: 45px;
+}
+.subtextHero{
+    font-size: 15px;
+    color: #363636;
+}
+.btnDemo{
+    background-color: #2ad167;
+    border-radius: 6px;
+    border: solid 2px #2ad167 ; 
+    color: #f7f8f9;
+    padding: 8px 15px 8px 15px;
+    height: 100px;  
+}
+.btnRegisterWhite{
+    background-color: #f7f8f9;
+    border: solid 1px #b3b3b3;
+    border-radius: 6px; 
+    color: #363636;
+    padding: 8px 15px 8px 15px;
+    height: 100px;    
+}
+.heroRight{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.heroLeft{
+    width: 50%;
+}
+.imgHeroYellow{
+    position: absolute;
+    top: -10%;
+    left:8%;
+    z-index: 2;
+}
+.imgHeroCenter{
+    position: relative;
+    z-index: 1;
+}
+.imgHeroBlue{
+    position: absolute;
+    z-index: 1;
+    bottom: -10%;
+    right: 8%;
+}
