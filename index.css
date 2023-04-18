@@ -1,120 +1,312 @@
-body{
-    font-family: 'Barlow Semi Condensed', sans-serif;      
+body {
+  font-family: "Poppins", sans-serif;  
 }
-.container{
-    width: 100%;
-    height: 100%;
+main{
+  margin: 0 4% 0 4%;
 }
-header{
-    font-weight:500;/*chequear weight de las fuentes*/
+.container {
+  width: 100%;
+  height: 100%;
 }
-nav{
-    margin: 0 5px 80px 5px;
+header {
+  font-weight: 600; /*chequear weight de las fuentes*/
+  color: #363636d4;
 }
-.gridNavContainer{
-    display: grid;
-    grid-template-columns: .3fr .4fr .3fr;
+nav {
+  margin: 0 5px 80px 5px;
 }
-.imgLogo{
-    width: 48px; 
-    height: 40px;   
+.gridNavContainer {
+  display: grid;
+  grid-template-columns: 0.3fr 0.4fr 0.3fr;
 }
-.imgLogoText{
-    width: 70px;
-    height: 30px;    
+.imgLogo {
+   width: 45px;
+   height: 35px;
+  }
+
+.imgLogoText {
+  width: 70px;
+  height: 30px;
 }
-.ulNav{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    padding: 0;
+.ulNav {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
 }
-.liNav{
-    margin: 0 8px 0 8px;
+.liNav {
+  margin: 0 8px 0 8px;
 }
-.btnLogin{
-    margin: 0 15px 0 15px;
+.btnLogin {
+  margin: 0 15px 0 15px;
+}
+.btnRegister {
+  background-color: #2ad167;
+  border-radius: 6px;
+  color: #f7f8f9;
+  padding: 8px 15px 8px 15px;
+}
+#logo {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#login {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 130px;
+  margin-bottom: 80px;
+  font-weight: bold;
+}
+.new {
+  background-color: #2ad167;
+  border-radius: 18px;
+  color: #f7f8f9;
+  padding: 3px 7px 3px 7px;
+  font-size: 9px;
+}
+h1 {
+  font-size: 55px;
+  font-weight: 700;
+  margin: 0;
+}
+.subtextHero {
+  font-size: 15px;
+  color: #727272;
+  margin: 30px 0 30px 0;
+}
+.btnHeroDemo {
+  display: block;
+  background-color: #2ad167;
+  border-radius: 6px;
+  border: solid 2px #2ad167;
+  color: #f7f8f9;
+  padding: 8px 20px 8px 20px;
+  width: fit-content;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+   
+}
+.btnRegisterWhite {
+  border: solid 1px #b3b3b3;
+  border-radius: 6px;
+  padding: 8px 15px 8px 15px;
+  height: 25px;
+  display: flex;
+  align-items: center;
 
 }
-.btnRegister{
-    background-color: #2ad167;
-    border-radius: 6px; 
-    color: #f7f8f9;
-    padding: 8px 15px 8px 15px;   
+.heroRight {
+  width: 43%;
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
-#logo{
-    display: flex;
-    align-items: center;
-    justify-content: left;
+.heroLeft {
+  width: 43%;
 }
-#nav{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.imgHeroYellow {
+  position: absolute;
+  top: -10%;
+  left: 8%;
+  z-index: 2;
 }
-#login{
-    display: flex;
-    align-items: center;
-    justify-content: right;
+.imgHeroCenter {
+  position: relative;
+  z-index: 1;
+  width: 554;
+  height: 464;
 }
-.hero{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.imgHeroBlue {
+  position: absolute;
+  z-index: 1;
+  bottom: -10%;
+  right: 8%;
 }
-.new{
-    background-color: #2ad167;
-    border-radius: 18px; 
-    color: #f7f8f9;
-    padding: 3px 7px 3px 7px;
-    font-size: 9px;
+
+#Features {
+  display: grid;
+  gap: 30px;
+  padding: 100px 13% 100px 13%;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
 }
-h1{
-    font-weight:bolder;
-    font-size: 45px;
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.subtextHero{
-    font-size: 15px;
-    color: #363636;
+
+.featureImg {
+  width: 25px;
+  fill: white;
 }
-.btnDemo{
-    background-color: #2ad167;
-    border-radius: 6px;
-    border: solid 2px #2ad167 ; 
-    color: #f7f8f9;
-    padding: 8px 15px 8px 15px;
-    height: 100px;  
+
+.imgFeaturesCont {
+  display: flex;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  background-color: #2ad167;
+  border-radius: 7px;
 }
-.btnRegisterWhite{
-    background-color: #f7f8f9;
-    border: solid 1px #b3b3b3;
-    border-radius: 6px; 
-    color: #363636;
-    padding: 8px 15px 8px 15px;
-    height: 100px;    
+
+.textFeaturesCont {
+  display: flex;
+  height: 150px;
+  width: 85%;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  line-height: 1.4;
 }
-.heroRight{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    position: relative;
+
+.textFeaturesCont h2 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: 25px;
+  margin-bottom: 0;
+  color: #1c1c1c;
 }
-.heroLeft{
-    width: 50%;
+.textFeaturesCont p {
+  font-weight: 600;
+  color: #5f5f5ff7;
 }
-.imgHeroYellow{
-    position: absolute;
-    top: -10%;
-    left:8%;
-    z-index: 2;
+.pricesCont{
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;  
 }
-.imgHeroCenter{
-    position: relative;
-    z-index: 1;
+.pricesTextCont{
+  display: flex;
+  flex-direction: column;  
+  justify-content: flex-start;
 }
-.imgHeroBlue{
-    position: absolute;
-    z-index: 1;
-    bottom: -10%;
-    right: 8%;
+.pricesTextCont h3{
+  font-size: 35px;
+  color: #363636;
+  margin-bottom: 5px;  
+}
+.pricesCard{
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f8f8;
+  align-items: center;
+  padding: 30px;
+  width: 300px;  
+}
+.priceCont{
+  display: flex;
+  flex-direction: row;
+  font-size: 45px;
+}
+.pricesImgCheck{
+  width: 17px;
+  height: 17px;
+  margin-right: 10px;  
+}
+.pricesPlanFeaturesCont{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.pricesPlanFeatures{
+  display: flex;
+  flex-direction: row;
+  align-items: center;  
+}
+.pricesPriceTop{
+  background-color: #a3ebbd;
+  width: fit-content;
+  padding: 6px;
+  border-radius: 15px;
+  color: #1ba54e;
+  font-size: 12px;
+}
+.pricesPlan{   
+  color:#2ad167;
+  font-size: 20px;
+}
+.pricesFact{
+  color: #929292;
+}
+.pricesCards{
+  display: grid;
+  gap: 30px;
+  padding: 20px 13% 100px 13%;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;  
+  margin: 20px 6% 20px 6%;
+}
+.heroBtnsCont{
+  display: flex;
+  flex-direction: row;
+}
+.btnPriceDemo{
+  display: block;
+  background-color: #2ad167;
+  border-radius: 6px;
+  border: solid 2px #2ad167;
+  color: #f7f8f9;
+  padding: 8px 20px 8px 20px;
+  height: 20px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footerCont{
+  width: 100%;
+  background-color: #2A3342;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5% 0% 10% 0%;
+}
+.imgLogoTextFooter {
+  width: 70px;
+  height: 30px;   
+}
+.ulNavFooter{
+  margin-top: 40px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;  
+  padding: 0;
+  color: rgb(187, 187, 187);
+  width: 100%; 
+}
+.footerAsset{
+  width: 65%;  
+}
+.line{
+  width: 100%;
+  background-color: #727272;
+  height: 2px;
+}
+.footerCopyRightText{
+  color: rgb(187, 187, 187);
 }
