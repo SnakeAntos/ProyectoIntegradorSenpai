@@ -303,10 +303,9 @@ h1 {
   width: 65%;  
 }
 .line{
-  width: 100%;
-  background-color: #727272;
-  height: 2px;
-}
+    width: 100%;
+    height: 2px;
+    background-image: linear-gradient(to bottom, rgba(114, 114, 114, 0.1) 0%, rgba(114, 114, 114, 0.9) 50%, rgba(114, 114, 114, 0.1) 100%);}
 .footerCopyRightText{
   color: rgb(187, 187, 187);
 }
