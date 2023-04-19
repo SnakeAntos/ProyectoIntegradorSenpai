@@ -12,7 +12,7 @@ main {
   max-width: 2560px;
 }
 header {
-  font-weight: 600; /*chequear weight de las fuentes*/
+  font-weight: 600;
   color: #363636d4;
 }
 nav {
@@ -338,6 +338,7 @@ nav {
 .footerCopyRightText {
   color: rgb(187, 187, 187);
   margin: 40px;
+  text-align: center;
 }
 
 @media (max-width: 400px) {
@@ -346,9 +347,21 @@ nav {
     margin: 0px;
   }
 
+  nav {
+    margin: 0 5px 35px 5px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.095);
+    padding-bottom: 20px;
+  }
+
   #Features {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    padding: 40px 13% 50px 13%;
+    background-color: #36363609;
+  }
+
+  .feature {
+    padding-top: 30px;
   }
 
   .pricesCardsCont {
@@ -363,10 +376,17 @@ nav {
   }
 
   .hero {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    margin-top: 0px;
+    background: linear-gradient(to top, transparent, 60%, #2ad16732, transparent);
   }
   .heroRight {
-    display: none;
+    width: 100%;
+    background-image: url("img/header.jpg");
+    background-size: 110%;
+    background-position: -10px;
+    height: 300px;
+    margin-bottom: 20px;
   }
 
   .heroLeft {
@@ -374,7 +394,7 @@ nav {
   }
 
   .imgHeroCenter {
-    width: 90%;
+    display: none;
   }
 
   .ulNavFooter {
@@ -403,5 +423,9 @@ nav {
 
   .imgHeroBlue {
     display: none;
+  }
+
+  .pricesTextCont h3 {
+    font-size: 30px;
   }
 }
