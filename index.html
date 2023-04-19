@@ -1,217 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <title>Integrador1</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="index.css" />
-  <title>Integrador1</title>
-</head>
+  <body>
+    <div class="container">
+      <!--Header-->
+      <header>
+        <nav class="gridNavContainer">
+          <div id="logo">
+            <img class="imgLogo" src="img/logo-verde.png" />
+            <img class="imgLogoText" src="img/flex-ui-green-light-woImago.svg" />
+          </div>
+          <div id="nav">
+            <ul class="ulNav">
+              <li class="liNav">Producto</li>
+              <li class="liNav">Caracteristicas</li>
+              <li class="liNav">Precios</li>
+            </ul>
+          </div>
+          <div id="login">
+            <a class="btnLogin">Ingresar</a>
+            <a class="btnRegister">Registrarse</a>
+          </div>
+        </nav>
+      </header>
+      <!--/Header-->
+      <main>
+        <!--Hero-->
+        <div class="hero">
+          <div class="heroLeft">
+            <span class="new">NUEVO</span>
+            <h1>La plataforma para las empresas del futuro.</h1>
+            <p class="subtextHero">Productos pensados para los negocios del proximo siglo</p>
+            <div class="heroBtnsCont">
+              <a class="btnHeroDemo">Solicitar demo</a>
+              <a class="btnRegisterWhite">Registrarse</a>
+            </div>
+          </div>
+          <div class="heroRight">
+            <img class="imgHeroYellow" src="img/circle3-yellow.svg" />
+            <img class="imgHeroCenter" src="img/header.jpg" />
+            <img class="imgHeroBlue" src="img/dots3-blue.svg" />
+          </div>
+        </div>
+        <!--/Hero-->
 
-<body><!--LALALALA-->
-  <div class="container">
-    <!--Header-->
-    <header>
-      <nav class="gridNavContainer">
-        <div id="logo">
-          <img class="imgLogo" src="img/logo-verde.png" />
-          <img class="imgLogoText" src="img/flex-ui-green-light-woImago.svg" />
-        </div>
-        <div id="nav">
-          <ul class="ulNav">
-            <li class="liNav">Producto</li>
-            <li class="liNav">Caracteristicas</li>
-            <li class="liNav">Precios</li>
-          </ul>
-        </div>
-        <div id="login">
-          <a class="btnLogin">Ingresar</a>
-          <a class="btnRegister">Registrarse</a>
-        </div>
-      </nav>
-    </header>
-    <!--/Header-->
-    <main>
-      <!--Hero-->
-      <div class="hero">
-        <div class="heroLeft">
-          <span class="new">NUEVO</span>
-          <h1>La plataforma para las empresas del futuro</h1>
-          <p class="subtextHero">Productos pensados para los negocios del proximo siglo</p>
-          <div class="heroBtnsCont">
-            <a class="btnHeroDemo">Solicitar demo</a>
-            <a class="btnRegisterWhite">Registrarse</a>
-          </div>
-        </div>
-        <div class="heroRight">
-          <img class="imgHeroYellow" src="img/circle3-yellow.svg" />
-          <img class="imgHeroCenter" src="img/header.jpg" />
-          <img class="imgHeroBlue" src="img/dots3-blue.svg" />
-        </div>
-      </div>
-      <!--/Hero-->
-
-      <!--Features-->
-      <div id="Features" class="features">
-        <div id="feature1" class="feature">
-          <div class="imgFeaturesCont">
-            <img class="featureImg" src="img/mail-icon.svg" alt="mailIcon" />
-          </div>
-          <div class="textFeaturesCont">
-            <h2>Capacitación</h2>
-            <p>Asistencia y capacitación de primer nivel</p>
-          </div>
-        </div>
-        <div id="feature2" class="feature">
-          <div class="imgFeaturesCont">
-            <img class="featureImg" src="img/analytics-icon.svg" alt="analytics-icon" />
-          </div>
-          <div class="textFeaturesCont">
-            <h2>Analíticas claras</h2>
-            <p>Disfruta de un dashboard de analíticas claras y accionables</p>
-          </div>
-        </div>
-        <div id="feature3" class="feature">
-          <div class="imgFeaturesCont">
-            <img class="featureImg" src="img/people-icon.svg" alt="people-icon" />
-          </div>
-          <div class="textFeaturesCont">
-            <h2>Soluciones para equipos</h2>
-            <p>Facilita el accionar de tu empresa con nuestra suite de herramientas</p>
-          </div>
-        </div>
-      </div>
-      <!--/Features-->
-      <!--Prices Section-->
-      <div class="pricesCont">
-        <div class="pricesTextCont">
-          <h3>Precios flexibles que escalan contigo</h3>
-          <p class="subtextHero">Nuestra facturacion se ajusta al tamaño de tu empresa. Tiempo de prueba de 7 días en
-            todos nuestros planes.</p>
-        </div>
-        <!--Cards-->
-        <!--Card1-->
-        <div class="pricesCards">
-          <div class="pricesCard">
-            <span class="pricesPriceTop">PRECIO</span>
-            <P class="pricesPlan">Plan basico</P>
-            <div class="priceCont">
-              <span>$</span>
-              <span>10/</span>
-              <span>mes</span>
+        <!--Features-->
+        <div id="Features" class="features">
+          <div id="feature1" class="feature">
+            <div class="imgFeaturesCont">
+              <img class="featureImg" src="img/mail-icon.svg" alt="mailIcon" />
             </div>
-            <p class="pricesFact">Facturado anualmente</p>
-            <div class="pricesPlanFeaturesCont">
-              <div class="pricesPlanFeatures">
-                <img class="pricesImgCheck" src="/img/check.svg" />
-                <p>1GB de almacenamiento</p>
-              </div>
-              <div class="pricesPlanFeatures">
-                <img class="pricesImgCheck" src="/img/check.svg" />
-                <p>Dashboard completo</p>
-              </div>
-              <div class="pricesPlanFeatures">
-                <img class="pricesImgCheck" src="/img/check.svg" />
-                <p>Asistencia por correo</p>
-              </div>
-              <div class="pricesPlanFeatures">
-                <img class="pricesImgCheck" src="/img/check.svg" />
-                <p>Hasta 10 miembros</p>
-              </div>
+            <div class="textFeaturesCont">
+              <h2>Capacitación</h2>
+              <p>Asistencia y capacitación de primer nivel</p>
             </div>
-            <a class="btnPriceDemo">Solicitar demo</a>
           </div>
-          <!--Card1-->
-          <div class="pricesCard">
-            <span class="pricesPriceTop">PRECIO</span>
-            <P class="pricesPlan">Plan basico</P>
-            <div class="priceCont">
-              <span>$</span>
-              <span>10/</span>
-              <span>mes</span>
+          <div id="feature2" class="feature">
+            <div class="imgFeaturesCont">
+              <img class="featureImg" src="img/analytics-icon.svg" alt="analytics-icon" />
             </div>
-            <p class="pricesFact">Facturado anualmente</p>
-            <div class="pricesPlanFeaturesCont">
-              <div class="pricesPlanFeatures">
-                <img class="pricesImgCheck" src="/img/check.svg" />
-                <p>1GB de almacenamiento</p>
-              </div>
-              <div class="pricesPlanFeatures">
-                <img class="pricesImgCheck" src="/img/check.svg" />
-                <p>Dashboard completo</p>
-              </div>
-              <div class="pricesPlanFeatures">
-                <img class="pricesImgCheck" src="/img/check.svg" />
-                <p>Asistencia por correo</p>
-              </div>
-              <div class="pricesPlanFeatures">
-                <img class="pricesImgCheck" src="/img/check.svg" />
-                <p>Hasta 10 miembros</p>
-              </div>
+            <div class="textFeaturesCont">
+              <h2>Analíticas claras</h2>
+              <p>Disfruta de un dashboard de analíticas claras y accionables</p>
             </div>
-            <a class="btnPriceDemo">Solicitar demo</a>
           </div>
-          <div class="pricesCard">
-            <span class="pricesPriceTop">PRECIO</span>
-            <P class="pricesPlan">Plan basico</P>
-            <div class="priceCont">
-              <span>$</span>
-              <span>10/</span>
-              <span>mes</span>
+          <div id="feature3" class="feature">
+            <div class="imgFeaturesCont">
+              <img class="featureImg" src="img/people-icon.svg" alt="people-icon" />
             </div>
-            <p class="pricesFact">Facturado anualmente</p>
-            <div class="pricesPlanFeaturesCont">
-              <div class="pricesPlanFeatures">
-                <img class="pricesImgCheck" src="/img/check.svg" />
-                <p>1GB de almacenamiento</p>
-              </div>
-              <div class="pricesPlanFeatures">
-                <img class="pricesImgCheck" src="/img/check.svg" />
-                <p>Dashboard completo</p>
-              </div>
-              <div class="pricesPlanFeatures">
-                <img class="pricesImgCheck" src="/img/check.svg" />
-                <p>Asistencia por correo</p>
-              </div>
-              <div class="pricesPlanFeatures">
-                <img class="pricesImgCheck" src="/img/check.svg" />
-                <p>Hasta 10 miembros</p>
-              </div>
+            <div class="textFeaturesCont">
+              <h2>Soluciones para equipos</h2>
+              <p>Facilita el accionar de tu empresa con nuestra suite de herramientas</p>
             </div>
-            <a class="btnPriceDemo">Solicitar demo</a>
+          </div>
+        </div>
+        <!--/Features-->
+        <!--Prices Section-->
+        <div class="pricesCont">
+          <div class="pricesTextCont">
+            <h3>Precios flexibles que escalan contigo</h3>
+            <p class="subtextHero">
+              Nuestra facturacion se ajusta al tamaño de tu empresa. Tiempo de prueba de 7 días en todos nuestros
+              planes.
+            </p>
           </div>
           <!--Cards-->
+          <!--Card1-->
+          <div class="pricesCardsCont">
+            <div class="pricesCard">
+              <span class="pricesPriceTop">PRECIO</span>
+              <p class="pricesPlan">Plan basico</p>
+              <div class="priceCont">
+                <div class="pricesTag">
+                  <span>$</span>
+                </div>
+                <div class="pricesPriceMonth">
+                  <span class="pricesPrice">10</span>
+                  <span class="pricesMonth">/mes</span>
+                </div>
+              </div>
+              <p class="pricesFact">Facturado anualmente</p>
+              <div class="pricesPlanFeaturesCont">
+                <div class="pricesPlanFeatures">
+                  <img class="pricesImgCheck" src="img/check.svg" />
+                  <p>1GB de almacenamiento</p>
+                </div>
+                <div class="pricesPlanFeatures">
+                  <img class="pricesImgCheck" src="img/check.svg" />
+                  <p>Dashboard completo</p>
+                </div>
+                <div class="pricesPlanFeatures">
+                  <img class="pricesImgCheck" src="img/check.svg" />
+                  <p>Asistencia por correo</p>
+                </div>
+                <div class="pricesPlanFeatures">
+                  <img class="pricesImgCheck" src="img/check.svg" />
+                  <p>Hasta 10 miembros</p>
+                </div>
+              </div>
+              <a class="btnPriceDemo">Solicitar demo</a>
+            </div>
+            <!--Card1-->
+            <div class="pricesCard">
+              <span class="pricesPriceTop">PRECIO</span>
+              <p class="pricesPlan">Plan freelancer</p>
+              <div class="priceCont">
+                <div class="pricesTag">
+                  <span>$</span>
+                </div>
+                <div class="pricesPriceMonth">
+                  <span class="pricesPrice">99</span>
+                  <span class="pricesMonth">/mes</span>
+                </div>
+              </div>
+              <p class="pricesFact">Facturado anualmente</p>
+              <div class="pricesPlanFeaturesCont">
+                <div class="pricesPlanFeatures">
+                  <img class="pricesImgCheck" src="img/check.svg" />
+                  <p>Caracteristicas basicas</p>
+                </div>
+                <div class="pricesPlanFeatures">
+                  <img class="pricesImgCheck" src="img/check.svg" />
+                  <p>Asistencia preferencial</p>
+                </div>
+                <div class="pricesPlanFeatures">
+                  <img class="pricesImgCheck" src="img/check.svg" />
+                  <p>100GB de almacenamiento</p>
+                </div>
+                <div class="pricesPlanFeatures">
+                  <img class="pricesImgCheck" src="img/check.svg" />
+                  <p>Hasta 100 miembros</p>
+                </div>
+              </div>
+              <a class="btnPriceDemo">Solicitar demo</a>
+            </div>
+            <div class="pricesCard">
+              <span class="pricesPriceTop">PRECIO</span>
+              <p class="pricesPlan">Plan empresas</p>
+              <div class="priceCont">
+                <div class="pricesTag">
+                  <span>$</span>
+                </div>
+                <div class="pricesPriceMonth">
+                  <span class="pricesPrice">799</span>
+                  <span class="pricesMonth">/mes</span>
+                </div>
+              </div>
+              <p class="pricesFact">Facturado anualmente</p>
+              <div class="pricesPlanFeaturesCont">
+                <div class="pricesPlanFeatures">
+                  <img class="pricesImgCheck" src="img/check.svg" />
+                  <p>Caracteristicas freelancer</p>
+                </div>
+                <div class="pricesPlanFeatures">
+                  <img class="pricesImgCheck" src="img/check.svg" />
+                  <p>1TB de almacenamiento</p>
+                </div>
+                <div class="pricesPlanFeatures">
+                  <img class="pricesImgCheck" src="img/check.svg" />
+                  <p>Asistencia telefónica 24/7</p>
+                </div>
+                <div class="pricesPlanFeatures">
+                  <img class="pricesImgCheck" src="img/check.svg" />
+                  <p>Miembros ilimitados</p>
+                </div>
+              </div>
+              <a class="btnPriceDemo">Solicitar demo</a>
+            </div>
+            <!--Cards-->
+          </div>
         </div>
-      </div>
-      <!--Prices Section-->      
-    </main>
-    <!--FOOTER-->
-    <footer>
-      <div class="footerCont">
-        <div id="footerlogo">
-          <img class="imgLogo" src="img/logo-verde.png" />
-          <img class="imgLogoTextFooter" src="img/logo-Flex-White.svg" />
+        <!--Prices Section-->
+      </main>
+      <!--FOOTER-->
+      <footer>
+        <div class="footerCont">
+          <div id="footerlogo">
+            <img class="imgLogo" src="img/logo-verde.png" />
+            <img class="imgLogoTextFooter" src="img/logo-Flex-White.svg" />
+          </div>
+          <div class="footerAsset">
+            <ul class="ulNavFooter">
+              <li class="liNav">Producto</li>
+              <li class="liNav">Funcionalidades</li>
+              <li class="liNav">Precios</li>
+              <li class="liNav">Recursos</li>
+              <li class="liNav">Carreras</li>
+              <li class="liNav">Ayuda</li>
+              <li class="liNav">Privacidad</li>
+            </ul>
+          </div>
+          <div class="line"></div>
+          <p class="footerCopyRightText">© 2022 Flex. Un producto ficticio de Senpai.</p>
         </div>
-        <div class="footerAsset">
-          <ul class="ulNavFooter">
-            <li class="liNav">Producto</li>
-            <li class="liNav">Funcionalidades</li>
-            <li class="liNav">Precios</li>
-            <li class="liNav">Recursos</li>
-            <li class="liNav">Carreras</li>
-            <li class="liNav">Ayuda</li>
-            <li class="liNav">Privacidad</li>
-          </ul>
-        </div>
-        <div class="line"></div>
-        <p class="footerCopyRightText">c 2022 Flex/ Un producto ficticio de Senpai.</p>
-      </div>
-    </footer>
-  </div>
-</body>
-
+      </footer>
+    </div>
+  </body>
 </html>

@@ -1,15 +1,18 @@
 body {
-  font-family: "Poppins", sans-serif;  
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
 }
-main{
+main {
   margin: 0 4% 0 4%;
 }
 .container {
   width: 100%;
   height: 100%;
+  max-width: 2560px;
 }
 header {
-  font-weight: 600; /*chequear weight de las fuentes*/
+  font-weight: 600;
   color: #363636d4;
 }
 nav {
@@ -20,9 +23,9 @@ nav {
   grid-template-columns: 0.3fr 0.4fr 0.3fr;
 }
 .imgLogo {
-   width: 45px;
-   height: 35px;
-  }
+  width: 45px;
+  height: 35px;
+}
 
 .imgLogoText {
   width: 70px;
@@ -77,15 +80,15 @@ nav {
   padding: 3px 7px 3px 7px;
   font-size: 9px;
 }
-h1 {
-  font-size: 55px;
+.hero h1 {
+  font-size: 62px;
   font-weight: 700;
   margin: 0;
 }
 .subtextHero {
   font-size: 15px;
   color: #727272;
-  margin: 30px 0 30px 0;
+  margin: 30px 0 40px 0;
 }
 .btnHeroDemo {
   display: block;
@@ -93,22 +96,20 @@ h1 {
   border-radius: 6px;
   border: solid 2px #2ad167;
   color: #f7f8f9;
-  padding: 8px 20px 8px 20px;
+  padding: 8px 25px 8px 25px;
   width: fit-content;
-  height: 25px;
+  height: 35px;
   display: flex;
   align-items: center;
   margin-right: 15px;
-   
 }
 .btnRegisterWhite {
   border: solid 1px #b3b3b3;
   border-radius: 6px;
-  padding: 8px 15px 8px 15px;
-  height: 25px;
+  padding: 8px 25px 8px 25px;
+  height: 35px;
   display: flex;
   align-items: center;
-
 }
 .heroRight {
   width: 43%;
@@ -122,7 +123,7 @@ h1 {
 .imgHeroYellow {
   position: absolute;
   top: -10%;
-  left: 8%;
+  left: 6%;
   z-index: 2;
 }
 .imgHeroCenter {
@@ -135,13 +136,13 @@ h1 {
   position: absolute;
   z-index: 1;
   bottom: -10%;
-  right: 8%;
+  right: 6%;
 }
 
 #Features {
   display: grid;
   gap: 30px;
-  padding: 100px 13% 100px 13%;
+  padding: 100px 13% 50px 13%;
   justify-content: center;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
@@ -152,6 +153,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-width: 375px;
 }
 
 .featureImg {
@@ -189,123 +191,241 @@ h1 {
   font-weight: 600;
   color: #5f5f5ff7;
 }
-.pricesCont{
+.pricesCont {
   display: flex;
+  width: 100%;
   flex-direction: column;
   font-weight: bold;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
 }
-.pricesTextCont{
+.pricesTextCont {
   display: flex;
-  flex-direction: column;  
-  justify-content: flex-start;
+  width: 86%;
+  flex-direction: column;
+  justify-content: left;
 }
-.pricesTextCont h3{
-  font-size: 35px;
+.pricesTextCont h3 {
+  font-size: 50px;
   color: #363636;
-  margin-bottom: 5px;  
+  margin-bottom: 5px;
 }
-.pricesCard{
+.pricesCard {
   display: flex;
   flex-direction: column;
   background-color: #f8f8f8;
   align-items: center;
   padding: 30px;
-  width: 300px;  
+  width: 300px;
 }
-.priceCont{
+
+.pricesCardsCont {
+  display: grid;
+  gap: 30px;
+  padding: 100px 13% 50px 13%;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.priceCont {
   display: flex;
   flex-direction: row;
+  font-weight: 600;
+  color: #363636;
+}
+
+.pricesTag {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.pricesPrice {
   font-size: 45px;
 }
-.pricesImgCheck{
+
+.pricesMonth {
+  font-size: 25px;
+}
+
+.pricesImgCheck {
   width: 17px;
   height: 17px;
-  margin-right: 10px;  
+  margin-right: 10px;
 }
-.pricesPlanFeaturesCont{
+.pricesPlanFeaturesCont {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-.pricesPlanFeatures{
+.pricesPlanFeatures {
   display: flex;
   flex-direction: row;
-  align-items: center;  
+  align-items: center;
+  font-weight: 600;
+  color: rgb(54, 54, 54);
+  font-size: 15px;
 }
-.pricesPriceTop{
-  background-color: #a3ebbd;
+.pricesPriceTop {
+  background-color: #2ad16713;
   width: fit-content;
-  padding: 6px;
+  padding: 4px 6px 4px 6px;
   border-radius: 15px;
-  color: #1ba54e;
+  color: #2ad167;
   font-size: 12px;
 }
-.pricesPlan{   
-  color:#2ad167;
+.pricesPlan {
+  color: #2ad167;
   font-size: 20px;
 }
-.pricesFact{
+.pricesFact {
   color: #929292;
 }
-.pricesCards{
-  display: grid;
-  gap: 30px;
-  padding: 20px 13% 100px 13%;
-  justify-content: center;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;  
-  margin: 20px 6% 20px 6%;
-}
-.heroBtnsCont{
+.heroBtnsCont {
   display: flex;
   flex-direction: row;
 }
-.btnPriceDemo{
+.btnPriceDemo {
   display: block;
   background-color: #2ad167;
   border-radius: 6px;
   border: solid 2px #2ad167;
   color: #f7f8f9;
   padding: 8px 20px 8px 20px;
-  height: 20px;
+  height: 25px;
   width: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 15px;
 }
-.footerCont{
+.footerCont {
   width: 100%;
-  background-color: #2A3342;
+  background-color: #2a3342;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 5% 0% 10% 0%;
+  padding: 5% 0% 5% 0%;
 }
 .imgLogoTextFooter {
   width: 70px;
-  height: 30px;   
+  height: 30px;
 }
-.ulNavFooter{
+.ulNavFooter {
   margin-top: 40px;
   list-style: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;  
+  justify-content: space-between;
   padding: 0;
   color: rgb(187, 187, 187);
-  width: 100%; 
+  width: 100%;
 }
-.footerAsset{
-  width: 65%;  
+.footerAsset {
+  width: 65%;
 }
-.line{
-    width: 100%;
-    height: 2px;
-    background-image: linear-gradient(to bottom, rgba(114, 114, 114, 0.1) 0%, rgba(114, 114, 114, 0.9) 50%, rgba(114, 114, 114, 0.1) 100%);}
-.footerCopyRightText{
+.line {
+  width: 100%;
+  height: 2px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(114, 114, 114, 0.1) 0%,
+    rgba(114, 114, 114, 0.3) 50%,
+    rgba(114, 114, 114, 0.1) 100%
+  );
+}
+.footerCopyRightText {
   color: rgb(187, 187, 187);
+  margin: 40px;
+  text-align: center;
+}
+
+@media (max-width: 400px) {
+  main,
+  body {
+    margin: 0px;
+  }
+
+  nav {
+    margin: 0 5px 35px 5px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.095);
+    padding-bottom: 20px;
+  }
+
+  #Features {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 40px 13% 50px 13%;
+    background-color: #36363609;
+  }
+
+  .feature {
+    padding-top: 30px;
+  }
+
+  .pricesCardsCont {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 0;
+  }
+
+  .gridNavContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    margin-top: 0px;
+    background: linear-gradient(to top, transparent, 60%, #2ad16732, transparent);
+  }
+  .heroRight {
+    width: 100%;
+    background-image: url("img/header.jpg");
+    background-size: 110%;
+    background-position: -10px;
+    height: 300px;
+    margin-bottom: 20px;
+  }
+
+  .heroLeft {
+    width: 90%;
+  }
+
+  .imgHeroCenter {
+    display: none;
+  }
+
+  .ulNavFooter {
+    flex-direction: unset;
+    flex-wrap: wrap;
+  }
+
+  .footerAsset {
+    width: 92%;
+    line-height: 40px;
+  }
+
+  #footerlogo {
+    margin-top: 20px;
+  }
+
+  .hero h1 {
+    font-size: 35px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .imgHeroYellow {
+    display: none;
+  }
+
+  .imgHeroBlue {
+    display: none;
+  }
+
+  .pricesTextCont h3 {
+    font-size: 30px;
+  }
 }
