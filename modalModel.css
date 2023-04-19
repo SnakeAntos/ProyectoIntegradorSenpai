@@ -1,0 +1,40 @@
+.modalCloseCont{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.modalLogoImg{
+    width: 45px;
+    height: 35px;
+    background-color: rgb(108, 131, 86);
+    border-radius: 10px;
+    padding: 3px;
+}
+.modalNoFormCont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.modalFormCont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.modalInputCont{
+    display: flex;
+    flex-direction: column;
+}
+.modalInput{
+    height: 20px;
+    border-radius: 8px;
+    border-style: solid black;
+    width: 100%;
+}
+.modalLoginBtn {
+    display: block;
+    text-align: center;
+    background-color: #2ad167;
+    border-radius: 6px;
+    width: 100%;
+    color: #f7f8f9;
+    padding: 8px 15px 8px 15px;
+  }
