@@ -1,0 +1,124 @@
+html {
+    font-size: 16px;/*ya esta por defecto en este valor pero lo dejamos establecido por si acaso*/
+  }
+
+body{
+    margin: 0;
+}
+.modalCont{
+    display: none;
+    width: 600px;
+    height: 600px;
+    padding: 20px;    
+    margin: 0;
+    background-color: #2a3342;
+}
+.modalCloseCont{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.modalCloseBtn{
+    color: #ccc;
+    font-weight: bolder;
+    font-size: 25px;
+    cursor: pointer;
+}
+.modalLogoImg{
+    width: 40px;
+    height: 30px;
+    background-color: #2ad167;
+    border-radius: 10px;
+    padding: 10px 8px 10px 8px;
+    margin-bottom: 0;
+    
+}
+.modalTextTitle{
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    font-weight: bolder;
+    font-size: 1.6rem;
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+.modalTextSubtitle{
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    opacity: 40%;
+    font-size: 0.8rem;
+}
+.modalGenericSpan{
+    color: #ffffff;
+    font-size: 0.9rem ;
+    margin: 3px 0 3px 0;
+}
+.modalCheckCont{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0 0.9rem 0;
+    align-items: center;
+    
+}
+.modalCheckBox{
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;/*Esta propiedad no es tomada en cuenta por el explorador, no sabemos porque, ampliaremos*/
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    outline: none;    
+}
+.modalCheckRememberCont{
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.modalTextSmall{
+    color: #ffffff;
+    font-size: 0.6rem;    
+}
+.modalForgetPasswordRegister{
+    font-size: 0.6rem;
+    color:  #2ad167;
+}
+.modalForm{
+    width: 60%;
+}
+.modalNoFormCont{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+.modalFormCont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.modalInputCont{
+    display: flex;
+    flex-direction: column;
+}
+.modalInput{
+    height: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 6px 15px 6px 15px;    
+    margin-bottom: 1rem;
+}
+.modalLoginBtn {
+    display: block;
+    text-align: center;
+    background-color: #2ad167;
+    border-radius: 6px;    
+    color: #f7f8f9;
+    padding: 8px 15px 8px 15px;
+    margin-bottom: 0.7rem;    
+  }
+  .modalRegisterMsgCont{
+    display: flex;
+    justify-content: space-between;
+  }
