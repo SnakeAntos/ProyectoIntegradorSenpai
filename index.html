@@ -9,6 +9,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
       rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" type="text/css" href="index.css" />
     <title>Integrador1</title>
   </head>
@@ -33,7 +34,18 @@
             <a class="btnLogin">Ingresar</a>
             <a class="btnRegister">Registrarse</a>
           </div>
+          <div class="burgerIcon">
+            <img id="menu" src="img/burger-icon.svg" alt="0" />
+          </div>
         </nav>
+        <div class="dropdownNavMenu unactive">
+          <ul class="ulDropNav">
+            <li class="liDropNav">Iniciar Sesion</li>
+            <li class="liDropNav">Producto</li>
+            <li class="liDropNav">Caracteristicas</li>
+            <li class="liDropNav">Precios</li>
+          </ul>
+        </div>
       </header>
       <!--/Header-->
       <main>
@@ -227,5 +239,6 @@
         </div>
       </footer>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
