@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet" />
+    <title>Document</title>
+    <style>
+      html {
+        height: 100%;
+      }
+      body {
+        height: 100%;
+        width: 100%;
+        background-color: #fa8bff;
+        background-image: -webkit-linear-gradient(45deg, #fa8bff 0%, #2bd2ff 52%, #2bff88 90%);
+        background-image: -moz-linear-gradient(45deg, #fa8bff 0%, #2bd2ff 52%, #2bff88 90%);
+        background-image: -o-linear-gradient(45deg, #fa8bff 0%, #2bd2ff 52%, #2bff88 90%);
+        background-image: linear-gradient(45deg, #fa8bff 0%, #2bd2ff 52%, #2bff88 90%);
+        font-family: "Poppins", sans-serif;
+      }
+
+      main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+
+      #mainDiv {
+        width: 70%;
+        height: 85%;
+        background-color: white;
+        border-radius: 20px;
+      }
+
+      #left {
+        width: 100%;
+        height: 60%;
+      }
+
+      #right {
+        width: 100%;
+        height: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+      }
+
+      .imgLogo {
+        width: 80px;
+        height: 65px;
+      }
+
+      .imgLogoText {
+        margin-left: 20px;
+        width: 100px;
+        height: 65px;
+      }
+
+      #constructionText {
+        font-size: 38px;
+        text-align: center;
+      }
+
+      #constructionText h1 {
+        margin-top: 15px;
+        margin-bottom: 0px;
+      }
+
+      #constructionText h2 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+
+      .img {
+        width: 32%;
+      }
+
+      #img {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+      }
+
+      #btnMainPage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 85px;
+        top: 6%;
+        left: 16%;
+      }
+
+      .btnMainPage {
+        font-size: 15px;
+        font-weight: 400;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      @media (max-width: 400px) {
+        body {
+          width: 100%;
+          background-image: linear-gradient(45deg, #fa8bff 0%, #2bd2ff 52%, #2bff88 90%);
+        }
+
+        #mainDiv {
+          width: 94%;
+          height: 97%;
+          background-color: white;
+          border-radius: 20px;
+        }
+        #constructionText {
+          margin-top: 40px;
+          margin-bottom: 40px;
+          font-size: 25px;
+          text-align: center;
+        }
+        .img {
+          width: 80%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div id="mainDiv">
+        <div id="logo">
+          <img class="imgLogo" src="img/logo-verde.png" />
+          <img class="imgLogoText" src="img/flex-ui-green-light-woImago.svg" />
+        </div>
+        <div id="constructionText">
+          <h1>ERROR 404</h1>
+          <h2>Website Under Construction</h2>
+        </div>
+        <div id="img">
+          <img class="img" src="img/websiteConstLogo.png" alt="gif" />
+        </div>
+        <div id="btnMainPage">
+          <a href="index.html" class="btnMainPage">Volver a la pagina principal</a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
