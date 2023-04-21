@@ -20,8 +20,13 @@ header {
   color: #363636d4;
   height: auto;
   margin: 0 5px 80px 5px;
+  position: fixed; /* Cambiamos la posicion */
+  top: 0; /* Lo fijamos en la parte superior */
+  z-index: 100;
+  width: 100vw;
+  background-color: #ffffff;
+  
 }
-
 .gridNavContainer {
   display: grid;
   grid-template-columns: 0.3fr 0.4fr 0.3fr;
@@ -30,7 +35,6 @@ header {
   width: 45px;
   height: 35px;
 }
-
 .imgLogoText {
   width: 70px;
   height: 30px;
@@ -393,7 +397,6 @@ header {
   margin: 40px;
   text-align: center;
 }
-
 @media (max-width: 400px) {
   main,
   body {
@@ -435,7 +438,7 @@ header {
   }
   .gridNavContainer {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;    
   }
   .hero {
     flex-direction: column-reverse;
