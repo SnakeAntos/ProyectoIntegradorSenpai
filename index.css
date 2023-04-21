@@ -1,5 +1,5 @@
 html {
-  font-size: 16px;/*ya esta por defecto en este valor pero lo dejamos establecido por si acaso*/
+  font-size: 16px; /*ya esta por defecto en este valor pero lo dejamos establecido por si acaso*/
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -66,6 +66,11 @@ header {
   padding-bottom: 5px;
 }
 
+.liDropNav a {
+  text-decoration: none;
+  color: #363636d4;
+}
+
 .liDropNav:hover {
   background-color: #2ad1674a;
 }
@@ -84,6 +89,11 @@ header {
 
 .liNav {
   margin: 0 8px 0 8px;
+}
+
+.liNav a {
+  text-decoration: none;
+  color: #1c1c1c;
 }
 .btnLogin {
   margin: 0 15px 0 15px;
@@ -470,42 +480,43 @@ header {
   }
   .pricesTextCont h3 {
     font-size: 30px;
-  }  
+  }
 }
 
-.btnOpenClass{
+.btnOpenClass {
   cursor: pointer;
 }
-.modalCont{
+.modalCont {
   position: absolute;
   z-index: 3;
-  top: 0;
+  top: 100px;
   display: none;
   width: 600px;
   height: 600px;
-  padding: 20px;    
+  padding: 20px;
   margin: 0;
   background-color: #2a3342;
+  border-radius: 20px;
 }
-.modalCloseCont{
+.modalCloseCont {
   display: flex;
   flex-direction: row-reverse;
 }
-.modalCloseBtn{
+.modalCloseBtn {
   color: #ccc;
   font-weight: bolder;
   font-size: 25px;
   cursor: pointer;
 }
-.modalLogoImg{
+.modalLogoImg {
   width: 40px;
   height: 30px;
   background-color: #2ad167;
   border-radius: 10px;
   padding: 10px 8px 10px 8px;
-  margin-bottom: 0;    
+  margin-bottom: 0;
 }
-.modalTextTitle{
+.modalTextTitle {
   text-align: center;
   width: 100%;
   color: #ffffff;
@@ -514,100 +525,101 @@ header {
   margin-bottom: 0;
   margin-top: 15px;
 }
-.modalTextSubtitle{
+.modalTextSubtitle {
   color: #ffffff;
   width: 100%;
   text-align: center;
   opacity: 40%;
   font-size: 0.8rem;
 }
-.modalGenericSpan{
+.modalGenericSpan {
   color: #ffffff;
-  font-size: 0.9rem ;
+  font-size: 0.9rem;
   margin: 3px 0 3px 0;
 }
-.modalCheckCont{
+.modalCheckCont {
   display: flex;
   width: 100%;
   flex-direction: row;
   justify-content: space-between;
   margin: 0 0 0.9rem 0;
-  align-items: center;    
+  align-items: center;
 }
-.modalCheckBox{
+.modalCheckBox {
   width: 15px;
   height: 15px;
-  border-radius: 100%;/*Esta propiedad no es tomada en cuenta por el explorador, no sabemos porque, ampliaremos*/
+  border-radius: 100%; /*Esta propiedad no es tomada en cuenta por el explorador, no sabemos porque, ampliaremos*/
   vertical-align: middle;
   border: 1px solid #ddd;
-  outline: none;    
+  outline: none;
 }
-.modalCheckRememberCont{
+.modalCheckRememberCont {
   display: flex;
   align-items: center;
   margin: 0;
 }
-.modalTextSmall{
+.modalTextSmall {
   color: #ffffff;
-  font-size: 0.6rem;    
-}
-.modalForgetPasswordRegister{
   font-size: 0.6rem;
-  color:  #2ad167;
 }
-.modalForm{
+.modalForgetPasswordRegister {
+  font-size: 0.6rem;
+  color: #2ad167;
+}
+.modalForm {
   width: 60%;
 }
-.modalNoFormCont{
+.modalNoFormCont {
   display: flex;
   width: 100%;
   flex-direction: column;
   align-items: center;
 }
-.modalFormCont{
+.modalFormCont {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
-.modalInputCont{
+.modalInputCont {
   display: flex;
   flex-direction: column;
 }
-.modalInput{
+.modalInput {
   height: 20px;
   border-radius: 8px;
   border: 1px solid #ccc;
-  padding: 6px 15px 6px 15px;    
+  padding: 6px 15px 6px 15px;
   margin-bottom: 1rem;
 }
 .modalLoginBtn {
   display: block;
   text-align: center;
   background-color: #2ad167;
-  border-radius: 6px;    
+  border-radius: 6px;
   color: #f7f8f9;
   padding: 8px 15px 8px 15px;
-  margin-bottom: 0.7rem;    
+  margin-bottom: 0.7rem;
 }
-.modalRegisterMsgCont{
+.modalRegisterMsgCont {
   display: flex;
   justify-content: space-between;
 }
 @media only screen and (max-width: 400px) {
-  .modalCont {   
+  .modalCont {
     height: 100vh;
     width: 100vw;
     display: flex;
-    justify-content: center;    
+    justify-content: center;
+    top: 0;
   }
-  .modalTextTitle{    
-    font-size: 1.1rem;    
+  .modalTextTitle {
+    font-size: 1.1rem;
   }
-  .modalFormCont{
-    width: 100vw;    
+  .modalFormCont {
+    width: 100vw;
   }
-  .modalCloseCont{
+  .modalCloseCont {
     margin-right: 15px;
-  } 
+  }
 }

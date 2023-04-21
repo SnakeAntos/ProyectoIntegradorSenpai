@@ -25,9 +25,9 @@
           </div>
           <div id="nav">
             <ul class="ulNav">
-              <li class="liNav">Producto</li>
-              <li class="liNav">Caracteristicas</li>
-              <li class="liNav">Precios</li>
+              <li class="liNav"><a href="#hero">Producto</a></li>
+              <li class="liNav"><a href="#Features">Caracteristicas</a></li>
+              <li class="liNav"><a href="#pricesCont">Precios</a></li>
             </ul>
           </div>
           <div id="login">
@@ -41,16 +41,16 @@
         <div class="dropdownNavMenu unactive">
           <ul class="ulDropNav">
             <li class="liDropNav btnOpenClass">Iniciar Sesion</li>
-            <li class="liDropNav">Producto</li>
-            <li class="liDropNav">Caracteristicas</li>
-            <li class="liDropNav">Precios</li>
+            <li class="liDropNav"><a href="#hero">Producto</a></li>
+            <li class="liDropNav"><a href="#Features">Caracteristicas</a></li>
+            <li class="liDropNav"><a href="#pricesCont">Precios</a></li>
           </ul>
         </div>
       </header>
       <!--/Header-->
       <main>
         <!--Hero-->
-        <div class="hero">
+        <div id="hero" class="hero">
           <div class="heroLeft">
             <span class="new">NUEVO</span>
             <h1>La plataforma para las empresas del futuro.</h1>
@@ -100,7 +100,7 @@
         </div>
         <!--/Features-->
         <!--Prices Section-->
-        <div class="pricesCont">
+        <div id="pricesCont" class="pricesCont">
           <div class="pricesTextCont">
             <h3>Precios flexibles que escalan contigo</h3>
             <p class="subtextHero">
@@ -240,40 +240,40 @@
       </footer>
     </div>
     <!--Modal-->
-    <div id="modal" class="modalCont">
+    <div id="modal" class="modalCont animatedDiv animate__animated">
       <div id="animatedDiv" class="modal-content animate__animated">
-      <div class="modalCloseCont"><a id="btnCloseModal" class="modalCloseBtn">X</a></div>
-      <div class="modalNoFormCont">
+        <div class="modalCloseCont"><a id="btnCloseModal" class="modalCloseBtn">X</a></div>
+        <div class="modalNoFormCont">
           <img class="modalLogoImg" src="img/logo-blanco.png" />
           <p class="modalTextTitle">Ingresa a tu cuenta</p>
           <p class="modalTextSubtitle">y empieza a conseguir resultados</p>
-      </div>
-      <div class="modalFormCont">
+        </div>
+        <div class="modalFormCont">
           <form class="modalForm">
-              <div class="modalInputCont">
-                  <span class="modalGenericSpan">Correo</span>
-                  <input class="modalInput" type="email" placeholder="tu-correo@senpaiacademy.com">
+            <div class="modalInputCont">
+              <span class="modalGenericSpan">Correo</span>
+              <input class="modalInput" type="email" placeholder="tu-correo@senpaiacademy.com" />
+            </div>
+            <div class="modalInputCont">
+              <span class="modalGenericSpan">Contrasena:</span>
+              <input class="modalInput" type="password" placeholder="****************!!" />
+            </div>
+            <div class="modalCheckCont">
+              <div class="modalCheckRememberCont">
+                <input class="modalCheckBox" type="checkbox" />
+                <span class="modalTextSmall">Recordarme</span>
               </div>
-              <div class="modalInputCont">
-                  <span class="modalGenericSpan">Contrasena:</span>
-                  <input class="modalInput" type="password" placeholder="****************!!">  
-              </div>
-              <div class="modalCheckCont">
-                  <div class="modalCheckRememberCont">
-                      <input class="modalCheckBox" type="checkbox">
-                      <span class="modalTextSmall">Recordarme</span>
-                  </div>
-                  <a class="modalForgetPasswordRegister">Olvide mi contrasena</a>
-              </div>
-              <a class="modalLoginBtn">Ingresar</a>
-              <div class="modalRegisterMsgCont">
-                  <span class="modalTextSmall">Aun no tienes cuenta?</span><a
-                      class="modalForgetPasswordRegister">Registrate</a>
-              </div>
+              <a class="modalForgetPasswordRegister">Olvide mi contrasena</a>
+            </div>
+            <a class="modalLoginBtn">Ingresar</a>
+            <div class="modalRegisterMsgCont">
+              <span class="modalTextSmall">Aun no tienes cuenta?</span
+              ><a class="modalForgetPasswordRegister">Registrate</a>
+            </div>
           </form>
+        </div>
       </div>
-  </div>
-  </div>
+    </div>
     <!--Modal-->
     <script src="index.js"></script>
   </body>
