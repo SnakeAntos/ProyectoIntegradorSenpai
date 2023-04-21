@@ -15,7 +15,7 @@
   </head>
 
   <body>
-    <div class="container">
+    <div id="containerGeneral" class="container">
       <!--Header-->
       <header>
         <nav class="gridNavContainer">
@@ -31,7 +31,7 @@
             </ul>
           </div>
           <div id="login">
-            <a class="btnLogin">Ingresar</a>
+            <a id="btnopenModal" class="btnLogin btnOpenClass">Ingresar</a>
             <a class="btnRegister">Registrarse</a>
           </div>
           <div class="burgerIcon">
@@ -40,7 +40,7 @@
         </nav>
         <div class="dropdownNavMenu unactive">
           <ul class="ulDropNav">
-            <li class="liDropNav">Iniciar Sesion</li>
+            <li class="liDropNav btnOpenClass">Iniciar Sesion</li>
             <li class="liDropNav">Producto</li>
             <li class="liDropNav">Caracteristicas</li>
             <li class="liDropNav">Precios</li>
@@ -239,6 +239,42 @@
         </div>
       </footer>
     </div>
+    <!--Modal-->
+    <div id="modal" class="modalCont">
+      <div id="animatedDiv" class="modal-content animate__animated">
+      <div class="modalCloseCont"><a id="btnCloseModal" class="modalCloseBtn">X</a></div>
+      <div class="modalNoFormCont">
+          <img class="modalLogoImg" src="img/logo-blanco.png" />
+          <p class="modalTextTitle">Ingresa a tu cuenta</p>
+          <p class="modalTextSubtitle">y empieza a conseguir resultados</p>
+      </div>
+      <div class="modalFormCont">
+          <form class="modalForm">
+              <div class="modalInputCont">
+                  <span class="modalGenericSpan">Correo</span>
+                  <input class="modalInput" type="email" placeholder="tu-correo@senpaiacademy.com">
+              </div>
+              <div class="modalInputCont">
+                  <span class="modalGenericSpan">Contrasena:</span>
+                  <input class="modalInput" type="password" placeholder="****************!!">  
+              </div>
+              <div class="modalCheckCont">
+                  <div class="modalCheckRememberCont">
+                      <input class="modalCheckBox" type="checkbox">
+                      <span class="modalTextSmall">Recordarme</span>
+                  </div>
+                  <a class="modalForgetPasswordRegister">Olvide mi contrasena</a>
+              </div>
+              <a class="modalLoginBtn">Ingresar</a>
+              <div class="modalRegisterMsgCont">
+                  <span class="modalTextSmall">Aun no tienes cuenta?</span><a
+                      class="modalForgetPasswordRegister">Registrate</a>
+              </div>
+          </form>
+      </div>
+  </div>
+  </div>
+    <!--Modal-->
     <script src="index.js"></script>
   </body>
 </html>

@@ -1,7 +1,6 @@
 html {
     font-size: 16px;/*ya esta por defecto en este valor pero lo dejamos establecido por si acaso*/
   }
-
 body{
     margin: 0;
 }
@@ -29,8 +28,7 @@ body{
     background-color: #2ad167;
     border-radius: 10px;
     padding: 10px 8px 10px 8px;
-    margin-bottom: 0;
-    
+    margin-bottom: 0;    
 }
 .modalTextTitle{
     text-align: center;
@@ -59,8 +57,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
     margin: 0 0 0.9rem 0;
-    align-items: center;
-    
+    align-items: center;    
 }
 .modalCheckBox{
     width: 15px;
