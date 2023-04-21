@@ -21,6 +21,7 @@ const closeMenu = () => {
 };
 
 burgerIcon.addEventListener("click", toggleMenu);
+
 //Modal
 let btnOpenModal = document.getElementById("btnopenModal");
 let modal = document.getElementById("modal");
@@ -51,11 +52,11 @@ btnCloseModal.addEventListener("click", function () {
   containerGeneral.style.display = "block";
 });
 //esta parte de window.onclick no anda no se porque...
-window.addEventListener("click", function () {
-  if (target != modal) {
-    modal.style.display = "none";
-  }
-});
+// window.addEventListener("click", function () {
+//   if (target != modal) {
+//     modal.style.display = "none";
+//   }
+// });
 
 // window.onclick = function(event) {
 //     if (event.target == modal) {
