@@ -144,6 +144,7 @@ header {
   display: flex;
   align-items: center;
   margin-right: 15px;
+  text-decoration: none;
 }
 .btnRegisterWhite {
   border: solid 1px #b3b3b3;
@@ -152,6 +153,8 @@ header {
   height: 35px;
   display: flex;
   align-items: center;
+  text-decoration: none;
+  color: #1c1c1c;
 }
 .heroRight {
   width: 43%;
@@ -340,6 +343,7 @@ header {
   align-items: center;
   justify-content: center;
   margin-top: 15px;
+  text-decoration: none;
 }
 .footerCont {
   width: 100%;
