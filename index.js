@@ -52,15 +52,3 @@ btnCloseModal.addEventListener("click", function () {
   registerBtn.style.display = "block";
   containerGeneral.style.display = "block";
 });
-//esta parte de window.onclick no anda no se porque...
-// window.addEventListener("click", function () {
-//   if (target != modal) {
-//     modal.style.display = "none";
-//   }
-// });
-
-// window.onclick = function(event) {
-//     if (event.target == modal) {
-//         modal.style.display = "none";
-//     }
-// }
