@@ -125,6 +125,11 @@ header {
   justify-content: right;
 }
 
+.btnRegister {
+  text-decoration: none;
+  color: white;
+}
+
 .hero {
   display: flex;
   align-items: center;
@@ -398,14 +403,23 @@ header {
   margin: 40px;
   text-align: center;
 }
-@media (max-width: 400px) {
+@media (min-width: 769px), (max-width: 1501px) {
+  body {
+    min-width: 1500px;
+  }
+}
+@media (max-width: 768px) {
   main,
   body {
     margin: 0px;
+    min-width: auto;
   }
   header {
     margin: 0 0px 30px 0px;
     border-bottom: 1px solid rgba(128, 128, 128, 0.188);
+    margin: 0 0px 20px 0px;
+    position: relative; /* Cambiamos la posicion */
+    z-index: auto;
   }
   nav {
     padding-top: 10px;
@@ -440,6 +454,7 @@ header {
   .gridNavContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 10px 5px 10px 5px;
   }
   .hero {
     flex-direction: column-reverse;
@@ -489,6 +504,9 @@ header {
 
 .btnOpenClass {
   cursor: pointer;
+}
+#modal {
+  text-decoration: none;
 }
 .modalCont {
   position: absolute;
@@ -569,6 +587,7 @@ header {
 .modalForgetPasswordRegister {
   font-size: 0.6rem;
   color: #2ad167;
+  text-decoration: none;
 }
 .modalForm {
   width: 60%;
@@ -604,6 +623,7 @@ header {
   color: #f7f8f9;
   padding: 8px 15px 8px 15px;
   margin-bottom: 0.7rem;
+  text-decoration: none;
 }
 .modalRegisterMsgCont {
   display: flex;
@@ -613,17 +633,49 @@ header {
   .modalCont {
     height: 100vh;
     width: 100vw;
-    display: flex;
+    display: none;
     justify-content: center;
     top: 0;
   }
+  .modalNoFormCont {
+    margin-top: 20%;
+    margin-bottom: 8%;
+  }
   .modalTextTitle {
-    font-size: 1.1rem;
+    margin-top: 6%;
+  }
+  .modalTextSubtitle {
+    font-size: 0.9rem;
+  }
+  .modalGenericSpan {
+    font-size: 1rem;
   }
   .modalFormCont {
     width: 100vw;
   }
+  .modalForm {
+    width: 80%;
+  }
+  .modalInput {
+    height: 30px;
+  }
   .modalCloseCont {
     margin-right: 15px;
+  }
+  .modalLogoImg {
+    width: 55px;
+    height: 45px;
+  }
+  .modalTextSmall {
+    font-size: 0.8rem;
+  }
+  .modalForgetPasswordRegister {
+    font-size: 0.8rem;
+  }
+  .modalCheckCont {
+    margin: 0.2rem 0 1rem 0;
+  }
+  .modalLoginBtn {
+    margin-bottom: 0.9rem;
   }
 }

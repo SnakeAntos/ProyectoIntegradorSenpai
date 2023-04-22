@@ -24,6 +24,7 @@ burgerIcon.addEventListener("click", toggleMenu);
 
 //Modal
 let btnOpenModal = document.getElementById("btnopenModal");
+let registerBtn = document.getElementsByClassName("btnRegister")[0];
 let modal = document.getElementById("modal");
 let btnCloseModal = document.getElementById("btnCloseModal");
 let btnOpenModalByClass = document.getElementsByClassName("btnOpenClass")[0]; //aqui llamo al primer elemento que cumple con esa clase
@@ -34,9 +35,9 @@ let containerGeneral = document.getElementById("containerGeneral");
 let animatedDiv = document.getElementsByClassName("animatedDiv")[0];
 
 btnOpenModalByClass.addEventListener("click", function () {
-  console.log("abriendo modal");
   modal.style.display = "block";
   btnOpenModal.style.display = "none";
+  registerBtn.style.display = "none";
   animatedDiv.classList.add("animate__fadeInDown");
 });
 btnOpenModalByClassBurger.addEventListener("click", function () {
@@ -46,9 +47,9 @@ btnOpenModalByClassBurger.addEventListener("click", function () {
   animatedDiv.classList.remove("animate__animated");
 });
 btnCloseModal.addEventListener("click", function () {
-  console.log("cerrando modal");
   modal.style.display = "none";
   btnOpenModal.style.display = "block";
+  registerBtn.style.display = "block";
   containerGeneral.style.display = "block";
 });
 //esta parte de window.onclick no anda no se porque...
