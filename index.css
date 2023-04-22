@@ -1,3 +1,4 @@
+/* General Style */
 html {
   font-size: 16px; /*ya esta por defecto en este valor pero lo dejamos establecido por si acaso*/
 }
@@ -15,6 +16,8 @@ main {
   height: 100%;
   max-width: 2560px;
 }
+
+/* Header & Nav Style */
 header {
   font-weight: 600;
   color: #363636d4;
@@ -126,6 +129,8 @@ header {
   align-items: center;
   justify-content: right;
 }
+
+/* Hero Style */
 .hero {
   display: flex;
   align-items: center;
@@ -204,6 +209,7 @@ header {
   right: 6%;
 }
 
+/* Features Style */
 #Features {
   display: grid;
   gap: 30px;
@@ -254,6 +260,8 @@ header {
   font-weight: 600;
   color: #5f5f5ff7;
 }
+
+/* Prices Style */
 .pricesCont {
   display: flex;
   width: 100%;
@@ -358,6 +366,8 @@ header {
   margin-top: 15px;
   text-decoration: none;
 }
+
+/* Footer Style */
 .footerCont {
   width: 100%;
   background-color: #2a3342;
@@ -399,105 +409,8 @@ header {
   margin: 40px;
   text-align: center;
 }
-@media (min-width: 769px), (max-width: 1501px) {
-  body {
-    min-width: 1500px;
-  }
-}
-@media (max-width: 768px) {
-  main,
-  body {
-    margin: 0px;
-    min-width: auto;
-  }
-  header {
-    margin: 0 0px 30px 0px;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.188);
-    margin: 0 0px 20px 0px;
-    position: relative; /* Cambiamos la posicion */
-    z-index: auto;
-  }
-  nav {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  #nav {
-    display: none;
-  }
-  .ulNav {
-    display: none;
-  }
-  #login {
-    display: none;
-  }
-  .burgerIcon {
-    display: flex;
-  }
-  #Features {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    padding: 40px 13% 50px 13%;
-    background-color: #36363609;
-  }
-  .feature {
-    padding-top: 30px;
-  }
-  .pricesCardsCont {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    padding: 0;
-  }
-  .gridNavContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 10px 5px 10px 5px;
-  }
-  .hero {
-    flex-direction: column-reverse;
-    margin-top: 0px;
-    background: linear-gradient(to top, transparent, 60%, #2ad16754, transparent);
-  }
-  .heroRight {
-    width: 100%;
-    background-image: url("img/header.jpg");
-    background-size: 110%;
-    background-position: -10px;
-    height: 300px;
-    margin-bottom: 20px;
-  }
-  .heroLeft {
-    width: 90%;
-  }
-  .imgHeroCenter {
-    display: none;
-  }
-  .ulNavFooter {
-    flex-direction: unset;
-    flex-wrap: wrap;
-  }
-  .footerAsset {
-    width: 92%;
-    line-height: 40px;
-  }
-  #footerlogo {
-    margin-top: 20px;
-  }
-  .hero h1 {
-    font-size: 35px;
-    font-weight: 700;
-    margin: 0;
-  }
-  .imgHeroYellow {
-    display: none;
-  }
-  .imgHeroBlue {
-    display: none;
-  }
-  .pricesTextCont h3 {
-    font-size: 30px;
-  }
-}
 
+/* Modal Style */
 .btnOpenClass {
   cursor: pointer;
 }
@@ -625,6 +538,109 @@ header {
   display: flex;
   justify-content: space-between;
 }
+
+/* Media queries */
+
+@media (min-width: 769px), (max-width: 1501px) {
+  body {
+    min-width: 1500px;
+  }
+}
+@media (max-width: 768px) {
+  main,
+  body {
+    margin: 0px;
+    min-width: auto;
+  }
+  header {
+    margin: 0 0px 30px 0px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.188);
+    margin: 0 0px 20px 0px;
+    position: relative; /* Cambiamos la posicion */
+    z-index: auto;
+  }
+  nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  #nav {
+    display: none;
+  }
+  .ulNav {
+    display: none;
+  }
+  #login {
+    display: none;
+  }
+  .burgerIcon {
+    display: flex;
+  }
+  #Features {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 40px 13% 50px 13%;
+    background-color: #36363609;
+  }
+  .feature {
+    padding-top: 30px;
+  }
+  .pricesCardsCont {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 0;
+  }
+  .gridNavContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px 5px 10px 5px;
+  }
+  .hero {
+    flex-direction: column-reverse;
+    margin-top: 0px;
+    background: linear-gradient(to top, transparent, 60%, #2ad16754, transparent);
+  }
+  .heroRight {
+    width: 100%;
+    background-image: url("img/header.jpg");
+    background-size: 110%;
+    background-position: -10px;
+    height: 300px;
+    margin-bottom: 20px;
+  }
+  .heroLeft {
+    width: 90%;
+  }
+  .imgHeroCenter {
+    display: none;
+  }
+  .ulNavFooter {
+    flex-direction: unset;
+    flex-wrap: wrap;
+  }
+  .footerAsset {
+    width: 92%;
+    line-height: 40px;
+  }
+  #footerlogo {
+    margin-top: 20px;
+  }
+  .hero h1 {
+    font-size: 35px;
+    font-weight: 700;
+    margin: 0;
+  }
+  .imgHeroYellow {
+    display: none;
+  }
+  .imgHeroBlue {
+    display: none;
+  }
+  .pricesTextCont h3 {
+    font-size: 30px;
+  }
+}
+
+/* media para el modal */
 @media only screen and (max-width: 400px) {
   .modalCont {
     height: 100vh;
