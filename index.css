@@ -108,6 +108,8 @@ header {
   border-radius: 6px;
   color: #f7f8f9;
   padding: 8px 15px 8px 15px;
+  text-decoration: none;
+  color: white;
 }
 #logo {
   display: flex;
@@ -124,12 +126,6 @@ header {
   align-items: center;
   justify-content: right;
 }
-
-.btnRegister {
-  text-decoration: none;
-  color: white;
-}
-
 .hero {
   display: flex;
   align-items: center;
